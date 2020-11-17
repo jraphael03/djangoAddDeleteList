@@ -1,0 +1,15 @@
+<html>
+<body>
+<form action="/person" method="POST">
+    <table>
+    {% csrf_token %}
+
+    {{ personForm.as_table }}
+    <tr><td colspan="2" align="center">
+    <input name="submit" type="submit" value="Add" />
+    </td></tr>
+    </table>
+</form>
+<div><a href="/">Home</div>
+</body>    
+</html>

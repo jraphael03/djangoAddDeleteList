@@ -1,0 +1,19 @@
+<html>
+<body>
+
+<table>
+<tr><th>ID</th><th>First</th><th>Last</th><th>Age</th><th></th></tr>
+{% for person in persons %}
+<tr>
+    <td><a href="updateperson/{{person.id}}">{{person.id}}</a></td>  <!---->
+    <td>{{person.fname}}</td>
+    <td>{{person.lname}}</td>
+    <td>{{person.age}}</td>
+    <td><a href="deleteperson/{{person.id}}">Delete</a></td>          <!--calls id and deletes person when pressed-->
+</tr>
+{% endfor %}
+</table>
+
+<div><a href="/">Home</div>
+</body>    
+</html>
